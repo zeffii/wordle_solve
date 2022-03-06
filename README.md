@@ -1,2 +1,2 @@
 # wordle_solver
-it's probably faster to solve it without this tool, but eventually the tool becomes obsolete because over time you will see all allowed words
+it's probably faster to solve it without this tool, eventually the tool becomes obsolete anyway as you encounter fewer new words (to you)
