@@ -2,19 +2,67 @@
 <html>
 
 <head>
-<meta charset="utf-8">
-<title>easing node docs</title>
-<link rel="stylesheet" href="css/style.css">
-<script type="text/javascript" src="js/brython.js"></script>
-<script type="text/javascript" src="js/brython_stdlib.js"></script>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.10.0/brython.min.js">
+    </script>
+    <style>
+    *{
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 1.0em;
+    }
+    td{
+        background-color: #ccc;
+        padding: 6px 12px 6px 12px;
+        border-radius: 0.2em;
+        text-align: center;
+        cursor: default;
+    }
+    #result{
+        border-color: #000;
+        border-width: 1px;
+        border-style: solid;
+        padding: 6px 12px 6px 12px;
+        text-align: left;
+        height: 6em;
+    }
+    td.divider{
+        background-color: #eee;
+        color: #eee;
+    }
+    td.empty_cell{
+        background-color: #fff;
+        color: #fff;
+    }
+    td.locked{
+        background-color: #c6e2c0;
+    }
+    td.locked.pressed{
+        background-color: #28f196;
+    }
+    td.present_but_not_locked{
+        background-color: #e9e9b9;
+    }
+    td.present_but_not_locked.pressed{
+        background-color: #ebeb47;
+    }
+    td.not_present{
+        background-color: #f2e1d5;
+    }
+    td.not_present.pressed{
+        background-color: #ef7a29;
+    }
+
+    </style>
 </head>
 
+
+
 <body onload="brython()">
-    <script type="text/python" src=python/main.py></script>
+
+<script type="text/python" src="pylib/calculator2.py"></script>
+
+
 </body>
 
 </html>
-
-
-
-    
