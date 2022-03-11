@@ -34,6 +34,17 @@ calc <= html.TR(html.TH(html.DIV("...", id="result"), colspan=24, rowspan=20))  
 
 compute = html.BUTTON("engage")
 
+docs = """
+how to use this?:<br><br>
+mark the letter-cells in the green area when a letter is locked in the correct location.<br>
+mark the letter-cells in the orangish area when letters are present but are not in the correct location<br>
+mark the letters in the red section which are certainly not present in the word<br>
+hit engage to present the list of suggestions.<br>
+hope the list narrows down before your 5th guess<br>    
+"""
+
+description = html.DIV(docs)
+
 def replace_at_index(my_str, index, new_char):
     return my_str[:index] + new_char + my_str[index + 1:]
 
@@ -70,6 +81,8 @@ for r in calc.rows:
 
 document <= calc
 document <= compute
+document <= description
+
 result = document["result"]
 
 def set_one_element_active(element, kind):
